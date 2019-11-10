@@ -1,6 +1,5 @@
 package com.compasso.compasso.service.impl;
 
-import java.net.ConnectException;
 import java.util.List;
 import java.util.Optional;
 

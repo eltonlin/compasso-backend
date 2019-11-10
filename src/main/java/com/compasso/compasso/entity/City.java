@@ -20,7 +20,16 @@ public class City {
 	@Size(min=2, message = "The state should be have 2 characteres in the minimum")
 	private String state;
 	
+	public City() {
+		
+	}
 	
+	public City(@NotBlank(message = "The name of the city can't be empty") @NotNull(message = "The name of the city can't be null") String name,
+			@NotBlank(message = "The state of the city can't be empty") @NotNull(message = "The state of the city can't be null") @Size(min = 2, message = "The state should be have 2 characteres in the minimum") String state) {
+		
+		this.name = name;
+		this.state = state;
+	}
 	public String getId() {
 		return id;
 	}
